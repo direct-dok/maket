@@ -1,0 +1,371 @@
+@media screen and (max-width: 1200px) {
+    .header-wrapper {
+        width: 90%;
+    }
+    .nav .nav-top li a {
+        font-size: 1em;
+    }
+    .content-designBlock__left-img img {
+        width: 70%;
+    }
+    .content-designBlock__right-content h2 {
+        font-size: 2.7em;
+    }
+    .content-designBlock__right-content p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .about-block {
+        grid-template-columns: 620px;
+        grid-template-rows: 430px;
+        margin: 0;
+    }
+    .about-block__content {
+        margin: 0;
+    }
+    .about-block h2 {
+        font-size: 2.7em;
+    }
+    .about-block__content p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .project-block {
+        grid-template-columns: 1108px;
+        grid-template-rows: 400px;
+    }
+    .project-block__list {
+        grid-template-columns: repeat(3, 180px);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-between;
+        grid-gap: 4em;
+    }
+
+    .my-skills__left-block .my-skills__skills-content h2, 
+    .work .work-wrapper h2 {
+        font-size: 2.7em;
+    }
+    .work .work-wrapper p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .gallery-list {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 480px);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .microsoft {
+        grid-template-rows: 366px;
+    }
+    .microsoft__list-logo {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, auto);
+    }
+    .microsoft__list-logo li {
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-wrapper {
+        display: block;
+    }
+    .header-wrapper__block-logo-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+    }
+    .nav-mobile__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        width: 60px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-mobile__list li {
+        width: 100%;
+        height: 6px;
+        background: #34547A;
+    }
+    .design-block {
+        display: flex;
+        align-items: center;
+    }
+    .design-block > div {
+        width: 50%;
+    }
+    .content-designBlock__left-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-designBlock__left-img img {
+        margin: 0;
+    }
+    .project-block {
+        display: block;
+        padding: 3em 0;
+    }
+    .project-block__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-gap: 0;
+    }
+    .project-block__list li {
+        display: flex;
+        justify-content: center;
+        width: 33%;
+        padding: 2.5em 0;
+    }
+    .my-skills, 
+    .my-skills__right-block, 
+    .my-skills__wrapper {
+        display: block;
+    }
+    .my-skills__wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding: 4.5em 1.5em;
+    }
+    .my-skills__left-block {
+        margin: 0 0 3.3em 0;
+    }
+    .my-skills__left-block .my-skills__skills-content {
+        padding: 0;
+    }
+    .my-skills__left-block .my-skills__skills-content h2 {
+        font-size: 2.7em;
+        margin: 0 0 1em 0;
+    }
+    .my-skills__list-skills li:last-child {
+        margin: 0;
+    }
+    .my-skills__right-block img {
+        width: 100%;
+        height: auto;
+    }
+    .work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5em 1.5em;
+    }
+    .work-wrapper {
+        width: 90%;
+    }
+    .gallery-list {
+        grid-template-rows: repeat(4, 350px);
+    }
+    .gallery-list li:nth-child(4) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+    }
+    .gallery-list li:nth-child(6) {
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
+    }
+    .gallery-list li:nth-child(8) {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    .microsoft {
+        display: block;
+    }
+    .form {
+        display: block;
+        padding: 5.5em 1.5em;
+    }
+    .form__content h2 {
+        font-size: 2.7em;
+        margin: 0 0 1em 0;
+    }
+    .form__content p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+    .form__call-back {
+        display: flex;
+        flex-wrap: wrap;
+        grid-column-gap: 0;
+    }
+    .form__call-back .form__field-submit {
+        display: block;
+        width: auto;
+    }
+    .form__field-name, 
+    .form__field-email {
+        width: calc(50% - 15px);
+    }
+    .form__call-back .form__field-name {
+        margin: 0 15px 0 0;
+    }
+    .form__call-back .form__field-email {
+        margin: 0 0 0 15px;
+    }
+    .form__call-back .form__field-message {
+        margin: 30px 0;
+    }
+    .form__call-back .form__field-submit input {
+        width: 220px;
+    }
+    .form__field-message,
+    .form__field-submit {
+        width: 100%;
+    }
+    .form__call-back .form__field-name input, 
+    .form__call-back .form__field-email input, 
+    .form__call-back .form__field-submit input {
+        height: 60px;
+    }
+    .form__call-back .form__field-submit input {
+        font-size: 1em;
+    }
+    ::placeholder {
+        font-size: 1.3em;
+        color: #5F5D5D;
+    }
+    .footer {
+        display: block;
+        padding: 2.5em 1.5em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-wrapper {
+        padding: 67px 0;
+    }
+    .design-block {
+        flex-direction: column;
+        margin: 3em 0 0 0;
+    }
+    .design-block > div {
+        width: 100%;
+    }
+    .content-designBlock__right-content {
+        padding: 0;
+    }
+    .content-designBlock__left-img {
+        margin: 0 0 2em 0;
+    }
+    .content-designBlock__left-img img {
+        max-width: 300px;
+    }
+    .content-designBlock__right-content h2, 
+    .content-designBlock__right-content p {
+        text-align: center;
+    }
+    .content-designBlock__right-content a {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .about-block {
+        display: block;
+        padding: 4.5em 0;
+    }
+    .about-block h2 {
+        margin: 0;
+    }
+    .project-block__list {
+
+    }
+    .project-block__list li {
+        width: 50%;
+    }
+    .work-wrapper {
+        width: 100%;
+    }
+    .work .work-wrapper p, 
+    .about-block__content p {
+        width: 100%;
+    }
+    .work .work-wrapper__video {
+        position: relative;
+        padding: 56% 0 0 0;
+        width: 100%;
+        height: auto;
+    }
+    .work .work-wrapper__video iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .microsoft {
+        padding: 4.5em 0;
+    }
+    .microsoft__list-logo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .form__call-back .form__field-name, 
+    .form__call-back .form__field-email {
+        width: 100%;
+    }
+    .form__call-back .form__field-name, 
+    .form__call-back .form__field-email, 
+    .form__call-back .form__field-message {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-wrapper {
+        padding: 30px 0;
+    }
+    .logo img {
+        width: 80%;
+    }
+    .grid-wrapper h2, 
+    .my-skills__left-block .my-skills__skills-content h2,
+    .my-skills__left-block .my-skills__skills-content h2, 
+    .work .work-wrapper h2 {
+        font-size: 2em; 
+        line-height: normal;
+    }
+
+    .content-designBlock__right-content p {
+        font-size: 1em;
+        margin: 1.3em 0;
+        padding: 0;
+    }
+    .nav-mobile__list {
+        width: 45px;
+        height: 32px;
+    }
+    .gallery-list {
+        display: block;
+    }
+    .gallery-list li {
+        width: 100%;
+        padding: 100% 0 0 0;
+    }
+    .footer__wrapper {
+        text-align: center;
+    }
+    .footer__wrapper, 
+    .footer__right-block {
+        display: block;
+    }
+    .footer__right-block {
+        margin: 1.5em 0 0 0;
+    }
+    .my-skills__wrapper {
+        margin: 0;
+        width: 100%;
+    }
+}

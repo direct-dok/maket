@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 704px auto 150px;
+}
+.header {
+    background: #EEEFF1;
+}
+.header-wrapper {
+    width: 1120px;
+    padding: 67px 0 158px 0;
+    margin: 0 auto;
+}
+.header-wrapper__block-logo-nav {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+}
+.logo {
+    grid-column: 1/4;
+}
+.nav-mobile {
+    display: none;
+}
+.nav {
+    grid-column: 15/33;
+}
+.nav .nav-top {
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    display: flex;
+}
+.nav .nav-top li {
+    margin: 0 0 0 43px;
+}
+.nav .nav-top li:first-child {
+    margin: 0 0 0 5px;
+}
+.nav .nav-top li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    color: #34547A;
+}
+.design-block {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-top: 144px; 
+}
+.content-designBlock__left-img img {
+    margin: 11px 0 0 86px;
+}
+.content-designBlock__right-content {
+    padding: 0 0 0 70px;
+}
+.content-designBlock__right-content h2 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    line-height: 39px;
+    letter-spacing: -1px;
+}
+.content-designBlock__right-content p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 52px;
+    padding-right: 25px;
+    color: #727272;
+}
+.content-designBlock__right-content a {
+    display: block;
+    width: 225px;
+    height: 65px;
+    margin-top: 53px;
+    background: #34547A;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 69px;
+    color: #fff;
+}
+
+/* Блок обо мне Начало */
+
+.about-block {
+    display: grid;
+    grid-template-columns: 548px;
+    grid-template-rows: 355px;
+    justify-content: center;
+    align-items: center;
+}
+.about-block__content {
+    text-align: center;
+    margin: 86px 0 98px 0;
+}
+.about-block h2 {
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: -1px;
+    
+}
+.about-block__content p {
+    margin: 40px 0 0 0;
+    padding: 0;
+    line-height: 25px;
+    text-indent: 20px;
+    letter-spacing: 0;
+    color: #727272;
+}
+
+/* Блок обо мне Конец */
+
+.project-block {
+    display: grid;
+    grid-template-columns: 1108px;
+    grid-template-rows: 250px;
+    align-items: center;
+    justify-content: center;
+    background: #34547A;
+}
+.project-block__list {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 1fr;
+    grid-gap: 2.2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.project-block__list li {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    justify-items: start;
+    align-items: center;
+    grid-gap: 0.7em;
+}
+.project-block__list li p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.project-block__list li p span {
+    display: block;
+    font-size: 21px;
+    font-weight: 900;
+    margin: 0 0 0.2em 0;
+    padding: 0.3em 0 0 0;
+}
+
+/* Блок мои навыки начало */
+
+.my-skills {
+    display: grid;
+    grid-template-columns: 1150px;
+    grid-template-rows: 654px;
+    justify-content: center;
+    align-items: center;
+}
+.my-skills__wrapper {
+    display: grid;
+    grid-template-columns: 39% 61%;
+    grid-template-rows: auto;
+    align-items: center;
+
+}
+.my-skills__left-block .my-skills__skills-content {
+    padding: 2.5em 0 0 0;
+}
+.my-skills__left-block .my-skills__skills-content h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    letter-spacing: -1px;
+    margin: 0 0 1.3em 0;
+    padding: 0;
+}
+.my-skills__list-skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.my-skills__list-skills li {
+    margin: 0 0 1.9em 0;
+}
+
+.my-skills__list-skills li h3 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #727272;
+    margin: 0.4em 0 0.9em 0;
+    padding: 0;
+}
+.my-skills__list-skills li .my-skills__progress-line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #C4C4C4;
+}
+.my-skills__list-skills li .my-skills__progress-line::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 78%;
+    background: #34547A;
+}
+.my-skills__right-block {
+    display: grid;
+    justify-content: end;
+}
+.my-skills__right-block img {
+    width: 556px;
+    height: 450px;
+}
+
+/* Блок мои навыки конец */
+
+.work {
+    display: grid;
+    grid-template-columns: 1110px;
+    grid-template-rows: 1004px;
+    justify-content: center;
+    align-items: center;
+    background: #EEEFF1;
+}
+.work .work-wrapper h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+}
+.work .work-wrapper p {
+    width: 540px;
+    margin: 38px auto 48px auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+.work .work-wrapper__video {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.work .work-wrapper__video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Галерея начало */
+.gallery {
+    padding: 28px 0 0 0;
+}
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(4, 480px);
+    grid-template-rows: repeat(2, 480px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.gallery-list li {
+    position: relative;
+}
+.gallery-list li:nth-child(even):hover {
+    cursor: pointer;
+}
+.gallery-list li:nth-child(6) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.gallery-list li:nth-child(8) {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+.gallery-list li:nth-child(odd) {
+    background: url(../img/photo-galery-2.png) no-repeat;
+    background-size: cover;
+}
+.gallery-list li:nth-child(even) {
+    background: url(../img/photo-galery-1.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.gallery-list li .gallery-list__opacity-block {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    transition: 0.3s;
+    transform: scale(0, 0);
+    opacity: 0;
+}
+.gallery-list li:nth-child(even):hover .gallery-list__opacity-block {
+    transform: scale(1, 1);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+/* Галерея конец */
+
+/* Блок с логотипами Microsoft начало */
+
+.microsoft {
+    display: grid;
+    grid-template-columns: 1113px;
+    grid-template-rows: 266px;
+    justify-content: center;
+    align-items: center;
+}
+.microsoft__list-logo {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 7px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Блок с логотипами Microsoft конец */
+
+.form {
+    display: grid;
+    grid-template-columns: 510px;
+    grid-template-rows: 762px;
+    justify-content: center;
+    align-items: center;
+    background: #EEEFF1;
+}
+.form__content p {
+    margin: 50px 0 65px 0;
+}
+.form__content p, 
+.form__content h2 {
+    text-align: center;
+}
+.form__content h2 {
+    font-size: 32px;
+    line-height: 37.5px;
+}
+.form__content p {
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+}
+.form__call-back {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70px 176px 106px;
+    grid-template-areas: 
+        "field-name field-email"
+        "field-message field-message"
+        "field-button field-button"
+    ;
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+.form__call-back > div {
+    margin: 0;
+    padding: 0;
+}
+.form__call-back .form__field-name {
+    grid-area: field-name;
+}
+.form__call-back .form__field-email {
+    grid-area: field-email;
+}
+.form__call-back .form__field-message {
+    grid-area: field-message;
+}
+.form__call-back .form__field-submit {
+    grid-area: field-button;
+    width: 100%;
+    display: grid;
+    align-items: end;
+}
+.form__field-message textarea, 
+.form__field-email input, 
+.form__field-name input {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+::placeholder {
+    font-size: 14px;
+    color: #5F5D5D;
+}
+.form__field-email input, 
+.form__field-name input {
+    padding: 1.5em 0 1.4em 1.3em;
+}
+.form__field-message textarea {
+    padding: 1.6em 0 1.4em 1.5em;
+}
+.form__call-back .form__field-name input,
+.form__call-back .form__field-email input {
+    height: 50px;
+    border-radius: 0;
+}
+.form__field-message textarea {
+    height: 176px;
+}
+.form__call-back .form__field-submit input {
+    width: 189px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    background: #34547A;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1105px;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    background: #34547A;
+}
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+.footer__left-block > div:first-child {
+    font-size: 21px;
+    margin: 0 0 1em 0;
+    color: #fff;
+}
+.footer__left-block > div:last-child {
+    font-size: 13px;
+    color: #fff;
+}
+.footer__right-block {
+    justify-self: end;
+}
+.footer__right-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
